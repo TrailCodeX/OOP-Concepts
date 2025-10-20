@@ -80,8 +80,104 @@
   - Responsive applications
   
   ---
+Here’s a concise, GitHub-ready Markdown summary based on your **Multitasking and Multithreading** page — perfect for interview prep:
 
-Happy coding!
+---
+
+
+# Multitasking & Multithreading 
+
+## 1. What is Multitasking?
+- Executing multiple tasks simultaneously.
+- Improves CPU utilization.
+
+### Types of Multitasking
+| Type                     | Description                                 |
+|--------------------------|---------------------------------------------|
+| **Process-based**        | Multiple processes run independently        |
+| **Thread-based**         | Multiple threads run within a single process|
+
+---
+
+## 2. Process-based Multitasking
+- Each process has its own memory space.
+- Heavyweight and slower context switching.
+- High communication cost.
+
+---
+
+## 3. Thread-based Multitasking
+- Threads share memory space.
+- Lightweight and faster context switching.
+- Low communication cost.
+
+---
+
+## 4. Java Multithreading
+- Running multiple threads simultaneously.
+- Threads are lightweight sub-processes.
+- Common in games, animations, etc.
+
+### Benefits
+- Saves memory
+- Faster context switching
+- Non-blocking user experience
+
+---
+
+## 5. Synchronization
+- Controls access to shared resources.
+- Prevents thread interference.
+
+### Types
+- **Process Synchronization**
+- **Thread Synchronization**
+
+#### Thread Synchronization Techniques
+- Synchronized Method
+- Synchronized Block
+- Static Synchronization
+
+---
+
+## 6. Mutual Exclusion
+- Ensures only one thread accesses shared data at a time.
+
+### Example
+  ```java
+  synchronized void printTable(int n) {
+      for(int i=1; i<=5; i++) {
+          System.out.println(n * i);
+          Thread.sleep(400);
+      }
+  }
 ```
 
-Let me know if you'd like this turned into flashcards or bundled with your other notes!
+---
+
+## 7. Concept of Lock
+- Every object has an internal lock (monitor).
+- A thread must acquire the lock before accessing shared data.
+
+---
+
+## 8. Static Synchronization
+- Applies lock at the class level.
+- Prevents interference across multiple object instances.
+
+### Example
+  ```java
+  synchronized static void printTable(int n) {
+      for(int i=1; i<=10; i++) {
+          System.out.println(n * i);
+          Thread.sleep(400);
+      }
+  }
+```
+
+---
+
+## 9. Inter-thread Communication
+- Threads cooperate using `wait()`, `notify()`, `notifyAll()`.
+
+---
