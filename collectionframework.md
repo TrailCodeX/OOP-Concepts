@@ -123,9 +123,3 @@ class NameComparator implements Comparator<Student> {
 }
 ```
 
----
-
-Happy coding!
-```
-
-Let me know if you’d like this turned into flashcards, a quiz, or split into separate notes for GitHub!
