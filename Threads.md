@@ -185,10 +185,10 @@ Here’s a concise, GitHub-ready Markdown summary based on your **Multitasking a
    The java.util.concurrent package provides several classes that can be used for this purpose, 
   including the Executors class and the ThreadPoolExecutor class.
    The java.util.concurrent package defines three executor interfaces:
-       1. Executor, a simple interface that supports launching new tasks.
-       2. ExecutorService, a subinterface of Executor, which adds features that help manage the life 
+       - Executor, a simple interface that supports launching new tasks.
+       - ExecutorService, a subinterface of Executor, which adds features that help manage the life 
       cycle, both of the individual tasks and of the executor itself.
-       3. ScheduledExecutorService, a subinterface of ExecutorService, supports future and/or 
+      - ScheduledExecutorService, a subinterface of ExecutorService, supports future and/or 
       periodic execution of tasks
        
 
